@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="3" failures="1" name="TestSuite" time="28.963" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jre1.8.0_91\bin"/>
+    <property name="java.vm.version" value="25.91-b15"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\hzhang\workspace\WebdriverTest"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\hzhang\workspace\WebdriverTest"/>
+    <property name="java.runtime.version" value="1.8.0_91-b15"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jre1.8.0_91\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\hzhang\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Users\hzhang\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf3066955790808345297.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jre1.8.0_91\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_91/bin/server;C:/Program Files/Java/jre1.8.0_91/bin;C:/Program Files/Java/jre1.8.0_91/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Ruby22\bin;C:\Program Files\Java\jdk1.8.0_91\bin;C:\Program Files\Java\jre1.8.0_91\bin;C:\Program Files\Java\jdk1.8.0_91/bin;C:\Program Files\Java\jdk1.8.0_91/jre/bin;C:\eclipes\eclipse;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="java.net.preferIPv4Stack" value="true"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\hzhang"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="hzhang"/>
+    <property name="java.class.path" value="/C:/eclipes/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.7.0.20160603-1931/jars/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jre1.8.0_91"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_91"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jre1.8.0_91\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jre1.8.0_91\lib\resources.jar;C:\Program Files\Java\jre1.8.0_91\lib\rt.jar;C:\Program Files\Java\jre1.8.0_91\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_91\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_91\lib\jce.jar;C:\Program Files\Java\jre1.8.0_91\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_91\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_91\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Users\hzhang\workspace\WebdriverTest\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="example.NewTest" name="testEasy" time="3.481"/>
+  <testcase classname="example.Firefoxcase" name="testFirefoxcase" time="11.792"/>
+  <testcase classname="example.Firefoxcase" name="tearDown" time="13.69">
+    <failure message="Error communicating with the remote browser. It may have died.
+Build info: version: &apos;unknown&apos;, revision: &apos;31c43c8&apos;, time: &apos;2016-08-02 21:57:56 -0700&apos;
+System info: host: &apos;PQA-0327LT&apos;, ip: &apos;10.16.17.126&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160726073904, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, browserVersion=48.0, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=Windows_NT, device=desktop}]
+Session ID: ecbe1848-c850-4a71-9258-7d341864b55d" type="org.openqa.selenium.remote.UnreachableBrowserException">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;unknown&apos;, revision: &apos;31c43c8&apos;, time: &apos;2016-08-02 21:57:56 -0700&apos;
+System info: host: &apos;PQA-0327LT&apos;, ip: &apos;10.16.17.126&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160726073904, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, browserVersion=48.0, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=Windows_NT, device=desktop}]
+Session ID: ecbe1848-c850-4a71-9258-7d341864b55d
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:670)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:706)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:531)
+	at example.Firefoxcase.tearDown(Firefoxcase.java:42)
+Caused by: java.lang.IllegalStateException: UnixUtils may not be used on Windows
+	at org.openqa.selenium.os.ProcessUtils.getProcessId(ProcessUtils.java:188)
+	at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.getPID(UnixProcess.java:222)
+	at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.access$300(UnixProcess.java:201)
+	at org.openqa.selenium.os.UnixProcess.destroy(UnixProcess.java:132)
+	at org.openqa.selenium.os.CommandLine.destroy(CommandLine.java:155)
+	at org.openqa.selenium.remote.service.DriverService.stop(DriverService.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:94)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:649)
+	... 36 more
+</failure>
+    <system-err>LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+[Child 11428] ###!!! ABORT: Aborting on channel error.: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2046
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x900001,name=PLayer::Msg___delete__) Channel error: cannot send/recv
+
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
+
+###!!! [Child][OnMaybeDequeueOne] Error: Channel error: cannot send/recv
+
+
+###!!! [Child][OnMaybeDequeueOne] Error: Channel error: cannot send/recv
+
+
+###!!! [Child][OnMaybeDequeueOne] Error: Channel error: cannot send/recv
+
+</system-err>
+  </testcase>
+</testsuite>
