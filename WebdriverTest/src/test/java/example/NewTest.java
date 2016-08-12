@@ -5,17 +5,27 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;		
-import org.testng.annotations.Test;	
+import org.testng.annotations.Test;
+
+import PageObjects.CommonActions;
+import PageObjects.PageLogin;
+
 import org.testng.annotations.BeforeTest;	
 import org.testng.annotations.AfterTest;		
 public class NewTest {		
-	    private WebDriver driver;		
+	    private WebDriver driver;
+	    private String ipaddress="http://www.guru99.com/selenium-tutorial.html";
+	    private String expectTitle= "Free Selenium Tutorials";
 		@Test				
 		public void testEasy() {	
-			driver.get("http://www.guru99.com/selenium-tutorial.html");  
-			String title = driver.getTitle();				 
-			Assert.assertTrue(title.contains("Free Selenium Tutorials")); 		
+			
+			CommonActions common = PageFactory.initElements(driver, CommonActions.class);
+			PageLogin pageLogin = PageFactory.initElements(driver, PageLogin.class);
+			common.WaitUntilPageLoaded(driver);
+			String logoname = pageLogin.getLogoName();  
+			pageLogin.checkPageTitle(driver,ipaddress,expectTitle); 		
 		}	
 		@BeforeTest
 		public void beforeTest() {	

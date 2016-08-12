@@ -26,7 +26,7 @@ public class IEcase {
 			//---
 			WebDriverWait wait = new WebDriverWait(driver, 30);
 		    wait.until(new ExpectedCondition<Boolean>() {
-		        public Boolean apply(WebDriver wdriver) {
+		        public Boolean apply(WebDriver driver) {
 		            return ((JavascriptExecutor) driver).executeScript(
 		                "return document.readyState"
 		            ).equals("complete");
