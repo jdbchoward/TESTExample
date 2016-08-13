@@ -22,8 +22,8 @@ public class NewTest {
 		public void testEasy() {	
 			
 			CommonActions common = PageFactory.initElements(driver, CommonActions.class);
-			PageLogin pageLogin = PageFactory.initElements(driver, PageLogin.class);
 			common.WaitUntilPageLoaded(driver);
+			PageLogin pageLogin = PageFactory.initElements(driver, PageLogin.class);			
 			String logoname = pageLogin.getLogoName();  
 			pageLogin.checkPageTitle(driver,ipaddress,expectTitle); 		
 		}	
