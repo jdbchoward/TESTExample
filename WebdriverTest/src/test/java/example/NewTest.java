@@ -29,8 +29,8 @@ public class NewTest {
 
 			PageLogin pageLogin = PageFactory.initElements(driver, PageLogin.class);
 			wait = new Wait(driver);
-			String logoname = pageLogin.getLogoName();  
-			pageLogin.checkPageTitle(driver,ipaddress,expectTitle); 		
+			String logoname = pageLogin.getLogoName(ipaddress);  
+			pageLogin.checkPageTitle(ipaddress,expectTitle); 		
 		}	
 		@BeforeTest
 		public void beforeTest() {	

@@ -8,50 +8,53 @@ import PageObjects.CommonActions;
 import PageObjects.PageLogin;
 import PageObjects.Wait;
 
-import org.testng.annotations.BeforeClass;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.AfterTest;
 
 public class StartBrowserWithParameter {
-	
-	 private WebDriver driver;
-	    private String ipaddress="http://www.guru99.com/selenium-tutorial.html";
-	    private String expectTitle= "Free Selenium Tutorials";
-	    private Wait wait;
-	     
- 
-	@Test
-	public void testEasy() {	
-		
 
-//		CommonActions common = PageFactory.initElements(driver, CommonActions.class);
-//
-//		PageLogin pageLogin = PageFactory.initElements(driver, PageLogin.class);
-//		
-//		wait = new Wait(driver);
-//		String logoname = pageLogin.getLogoName();  
-//		pageLogin.checkPageTitle(driver,ipaddress,expectTitle); 
-		driver.get("http://www.guru99.com/selenium-tutorial.html");  			
+	private WebDriver driver;
+	private String ipaddress = "http://www.jd.com/";
+	private Wait wait;
+	
+	@FindBy(xpath = "//a[contains(text(),'∆Û“µ≤…π∫')]")
+	private WebElement market; 
+	
+
+	@Test
+	public void testEasy() {
+
+		//get webpage and wait4pageLoaded
+		PageFactory.initElements(driver, this);
 		wait = new Wait(driver);
 		wait.WaitUntilPageLoaded();
+
+		//do login, or menu chooser etc...
+		PageLogin pageLogin = PageFactory.initElements(driver, PageLogin.class);
+		String logoname = pageLogin.getRegName(ipaddress);
+
+		//do other UI action
+		market.click();
+
 	}
 
-	
-  @BeforeTest
-  public void beforeTest() {
-	  
-		BrowserLoader brower = new BrowserLoader(BrowserTypes.chrome);
-		driver = brower.driver; 
-  }
+	@BeforeTest
+	public void beforeTest() {
 
-  @AfterTest
-  public void afterTest() {
-  }
+		CommonActions common = PageFactory.initElements(driver, CommonActions.class);
+		String browserType=common.getSettings().getValue("browserType");
+		BrowserLoader brower = new BrowserLoader(browserType);
+		driver = brower.driver;
+	}
+
+	@AfterTest
+	public void afterTest() {
+		driver.close();
+		driver.quit();
+	}
 
 }
