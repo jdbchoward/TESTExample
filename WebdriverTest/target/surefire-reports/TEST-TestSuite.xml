@@ -1,85 +1,252 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="1" name="TestSuite" time="28.963" errors="0" skipped="0">
+<testsuite tests="5" failures="3" name="TestSuite" time="44.835" errors="0" skipped="0">
   <properties>
-    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jre1.8.0_91\bin"/>
-    <property name="java.vm.version" value="25.91-b15"/>
-    <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\hzhang\workspace\WebdriverTest"/>
-    <property name="java.vendor.url" value="http://java.oracle.com/"/>
-    <property name="path.separator" value=";"/>
-    <property name="guice.disable.misplaced.annotation.check" value="true"/>
-    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="PROCESSOR_ARCHITECTURE" value="AMD64"/>
     <property name="file.encoding.pkg" value="sun.io"/>
-    <property name="user.script" value=""/>
-    <property name="user.country" value="US"/>
-    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="LOGONSERVER" value="\\PQA-BCSRV"/>
+    <property name="ProgramData" value="C:\ProgramData"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_91\jre"/>
+    <property name="TITLE" value="Tomcat"/>
+    <property name="NODE_NAME" value="master"/>
+    <property name="java.net.preferIPv4Stack" value="true"/>
+    <property name="JENKINS_URL" value="http://localhost:8080/jenkins/"/>
+    <property name="CATALINA_HOME" value="C:\apache-tomcat-9.0.0.M9"/>
+    <property name="ALLUSERSPROFILE" value="C:\ProgramData"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_91\jre\lib\endorsed"/>
+    <property name="PSModulePath" value="C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules"/>
+    <property name="=::" value="::\"/>
+    <property name="USERDOMAIN" value="PQATESTING"/>
     <property name="sun.os.patch.level" value=""/>
-    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\hzhang\workspace\WebdriverTest"/>
-    <property name="java.runtime.version" value="1.8.0_91-b15"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jre1.8.0_91\lib\endorsed"/>
-    <property name="os.arch" value="amd64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="RanorexPath" value="C:\Program Files (x86)\Ranorex 6.0\"/>
+    <property name="JAVA_OPTS" value=" &quot;-Djdk.tls.ephemeralDHKeySize=2048&quot; -Djava.util.logging.config.file=&quot;C:\apache-tomcat-9.0.0.M9\conf\logging.properties&quot; -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager"/>
+    <property name="CommonProgramFiles(x86)" value="C:\Program Files (x86)\Common Files"/>
+    <property name="java.version" value="1.8.0_91"/>
+    <property name="JOB_NAME" value="WebdriverTest"/>
+    <property name="COMPUTERNAME" value="PQA-0327LT"/>
+    <property name="EXECUTABLE" value="C:\apache-tomcat-9.0.0.M9\bin\catalina.bat"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="PUBLIC" value="C:\Users\Public"/>
+    <property name="user.name" value="hzhang"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="windir" value="C:\Windows"/>
+    <property name="PROCESSOR_IDENTIFIER" value="Intel64 Family 6 Model 78 Stepping 3, GenuineIntel"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="LOCALAPPDATA" value="C:\Users\hzhang\AppData\Local"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="user.script" value=""/>
+    <property name="path.separator" value=";"/>
+    <property name="NUMBER_OF_PROCESSORS" value="4"/>
+    <property name="BUILD_TAG" value="jenkins-WebdriverTest-4"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="sun.java.command" value="jenkins.maven3.agent.Maven31Main C:\apache-maven-3.3.9 C:\apache-tomcat-9.0.0.M9\webapps\jenkins\WEB-INF\lib\remoting-2.59.jar C:\Users\hzhang\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven31-interceptor-1.5.jar C:\Users\hzhang\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.5.jar 54201"/>
+    <property name="HUDSON_URL" value="http://localhost:8080/jenkins/"/>
+    <property name="JENKINS_SERVER_COOKIE" value="78664a50169cc8ac"/>
+    <property name="EXECUTOR_NUMBER" value="0"/>
+    <property name="Path" value="C:\Program Files\Java\jdk1.8.0_91/bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Ruby22\bin;C:\Program Files\Java\jdk1.8.0_91\bin;C:\Program Files\Java\jre1.8.0_91\bin;C:\Program Files\Java\jdk1.8.0_91/bin;C:\Program Files\Java\jdk1.8.0_91/jre/bin"/>
     <property name="java.io.tmpdir" value="C:\Users\hzhang\AppData\Local\Temp\"/>
+    <property name="APPDATA" value="C:\Users\hzhang\AppData\Roaming"/>
+    <property name="user.language" value="en"/>
+    <property name="CATALINA_TMPDIR" value="C:\apache-tomcat-9.0.0.M9\temp"/>
     <property name="line.separator" value="
 "/>
-    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="user.variant" value=""/>
+    <property name="BUILD_URL" value="http://localhost:8080/jenkins/job/WebdriverTest/4/"/>
+    <property name="ACTION" value="start"/>
+    <property name="M2_HOME" value="C:\apache-maven-3.3.9"/>
+    <property name="=C:" value="C:\apache-tomcat-9.0.0.M9\bin"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="BUILD_DISPLAY_NAME" value="#4"/>
+    <property name="OS" value="Windows_NT"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="CATALINA_BASE" value="C:\apache-tomcat-9.0.0.M9"/>
+    <property name="HUDSON_SERVER_COOKIE" value="78664a50169cc8ac"/>
+    <property name="JRE_HOME" value="C:\Program Files\Java\jdk1.8.0_91"/>
+    <property name="_EXECJAVA" value="start &quot;Tomcat&quot; &quot;C:\Program Files\Java\jdk1.8.0_91\bin\java.exe&quot;"/>
+    <property name="_RUNJAVA" value="&quot;C:\Program Files\Java\jdk1.8.0_91\bin\java.exe&quot;"/>
+    <property name="MAVEN_HOME" value="C:\apache-maven-3.3.9"/>
+    <property name="SESSIONNAME" value="Console"/>
+    <property name="PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="maven3.interceptor.common" value="C:\Users\hzhang\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.5.jar"/>
+    <property name="CLASSPATH" value=""/>
+    <property name="LOGGING_CONFIG" value="-Djava.util.logging.config.file=&quot;C:\apache-tomcat-9.0.0.M9\conf\logging.properties&quot;"/>
+    <property name="HOMEPATH" value="\Users\hzhang"/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\hzhang\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf3066955790808345297.tmp"/>
-    <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jre1.8.0_91\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_91/bin/server;C:/Program Files/Java/jre1.8.0_91/bin;C:/Program Files/Java/jre1.8.0_91/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Ruby22\bin;C:\Program Files\Java\jdk1.8.0_91\bin;C:\Program Files\Java\jre1.8.0_91\bin;C:\Program Files\Java\jdk1.8.0_91/bin;C:\Program Files\Java\jdk1.8.0_91/jre/bin;C:\eclipes\eclipse;;."/>
-    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="BUILD_NUMBER" value="4"/>
+    <property name="maven3.interceptor" value="C:\Users\hzhang\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven31-interceptor-1.5.jar"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_91\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\apache-maven-3.3.9/bin;C:\Program Files\Java\jdk1.8.0_91/bin;C:\Program Files\Java\jdk1.8.0_91/bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Ruby22\bin;C:\Program Files\Java\jdk1.8.0_91\bin;C:\Program Files\Java\jre1.8.0_91\bin;C:\Program Files\Java\jdk1.8.0_91/bin;C:\Program Files\Java\jdk1.8.0_91/jre/bin;."/>
+    <property name="HOMEDRIVE" value="C:"/>
+    <property name="POM_GROUPID" value="WebdriverTest"/>
+    <property name="POM_ARTIFACTID" value="WebdriverTest"/>
     <property name="java.class.version" value="52.0"/>
-    <property name="java.net.preferIPv4Stack" value="true"/>
+    <property name="JSSE_OPTS" value="&quot;-Djdk.tls.ephemeralDHKeySize=2048&quot;"/>
+    <property name="LOGGING_MANAGER" value="-Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager"/>
+    <property name="_RUNJDB" value="&quot;C:\Program Files\Java\jdk1.8.0_91\bin\jdb.exe&quot;"/>
+    <property name="JOB_URL" value="http://localhost:8080/jenkins/job/WebdriverTest/"/>
+    <property name="MAINCLASS" value="org.apache.catalina.startup.Bootstrap"/>
+    <property name="JENKINS_HOME" value="C:\Users\hzhang\.jenkins"/>
+    <property name="BUILD_ID" value="4"/>
+    <property name="TEMP" value="C:\Users\hzhang\AppData\Local\Temp"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_91\jre\bin"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="user.variant" value=""/>
+    <property name="PROCESSOR_REVISION" value="4e03"/>
+    <property name="POM_VERSION" value="0.0.1-SNAPSHOT"/>
+    <property name="HUDSON_HOME" value="C:\Users\hzhang\.jenkins"/>
+    <property name="ProgramFiles(x86)" value="C:\Program Files (x86)"/>
+    <property name="PATH+MAVEN" value="C:\apache-maven-3.3.9/bin"/>
+    <property name="USERDOMAIN_ROAMINGPROFILE" value="PQATESTING"/>
+    <property name="PROMPT" value="$P$G"/>
+    <property name="CURRENT_DIR" value="C:\apache-tomcat-9.0.0.M9\bin"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="JAVA_HOME" value="C:\Program Files\Java\jdk1.8.0_91"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="NODE_LABELS" value="master"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="USERPROFILE" value="C:\Users\hzhang"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_91\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
     <property name="os.version" value="10.0"/>
     <property name="user.home" value="C:\Users\hzhang"/>
-    <property name="user.timezone" value="America/Los_Angeles"/>
-    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
-    <property name="java.specification.version" value="1.8"/>
-    <property name="file.encoding" value="Cp1252"/>
-    <property name="user.name" value="hzhang"/>
-    <property name="java.class.path" value="/C:/eclipes/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.7.0.20160603-1931/jars/plexus-classworlds-2.5.2.jar"/>
-    <property name="java.vm.specification.version" value="1.8"/>
-    <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="C:\Program Files\Java\jre1.8.0_91"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
-    <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="user.language" value="en"/>
-    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
-    <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="1.8.0_91"/>
-    <property name="java.ext.dirs" value="C:\Program Files\Java\jre1.8.0_91\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
-    <property name="sun.boot.class.path" value="C:\Program Files\Java\jre1.8.0_91\lib\resources.jar;C:\Program Files\Java\jre1.8.0_91\lib\rt.jar;C:\Program Files\Java\jre1.8.0_91\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_91\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_91\lib\jce.jar;C:\Program Files\Java\jre1.8.0_91\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_91\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_91\classes"/>
-    <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="C:\Users\hzhang\workspace\WebdriverTest\EMBEDDED"/>
-    <property name="file.separator" value="\"/>
-    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="USERNAME" value="hzhang"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="PROCESSOR_LEVEL" value="6"/>
+    <property name="USERDNSDOMAIN" value="PQATESTING.COM"/>
+    <property name="CommonProgramW6432" value="C:\Program Files\Common Files"/>
+    <property name="user.dir" value="C:\Users\hzhang\workspace\WebdriverTest"/>
+    <property name="ProgramW6432" value="C:\Program Files"/>
+    <property name="TMP" value="C:\Users\hzhang\AppData\Local\Temp"/>
+    <property name="_JAVA_OPTIONS" value="-Djava.net.preferIPv4Stack=true"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="sun.desktop" value="windows"/>
-    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="SystemDrive" value="C:"/>
+    <property name="java.vm.version" value="25.91-b15"/>
+    <property name="java.class.path" value="C:\Users\hzhang\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven31-agent-1.5.jar;C:\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar;C:\apache-maven-3.3.9/conf/logging"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="WORKSPACE" value="C:\Users\hzhang\.jenkins\workspace\WebdriverTest"/>
+    <property name="ComSpec" value="C:\Windows\system32\cmd.exe"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="FPS_BROWSER_APP_PROFILE_STRING" value="Internet Explorer"/>
+    <property name="SystemRoot" value="C:\Windows"/>
+    <property name="CommonProgramFiles" value="C:\Program Files\Common Files"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="FPS_BROWSER_USER_PROFILE_STRING" value="Default"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.runtime.version" value="1.8.0_91-b15"/>
+    <property name="ProgramFiles" value="C:\Program Files"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_91\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_91\jre\classes"/>
+    <property name="PATH+JDK" value="C:\Program Files\Java\jdk1.8.0_91/bin"/>
+    <property name="user.country" value="US"/>
+    <property name="POM_PACKAGING" value="jar"/>
+    <property name="maven.home" value="C:\apache-maven-3.3.9"/>
+    <property name="HOME" value="C:\Program Files\Java\jdk1.8.0_91"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="POM_DISPLAYNAME" value="WebdriverTest"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
   </properties>
-  <testcase classname="example.NewTest" name="testEasy" time="3.481"/>
-  <testcase classname="example.Firefoxcase" name="testFirefoxcase" time="11.792"/>
-  <testcase classname="example.Firefoxcase" name="tearDown" time="13.69">
+  <testcase classname="example.IEcase" name="testEasy" time="0.17">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at example.IEcase.testEasy(IEcase.java:36)
+</failure>
+    <system-out>Page Is loaded.
+WebDriver
+</system-out>
+    <system-err>Started InternetExplorerDriver server (64-bit)
+2.53.1.0
+Listening on port 48481
+Only local connections are allowed
+log4j:WARN No appenders could be found for logger (org.apache.http.client.protocol.RequestAddCookies).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Starting ChromeDriver (v2.9.248315) on port 5331
+Starting ChromeDriver (v2.9.248315) on port 46882
+</system-err>
+  </testcase>
+  <testcase classname="example.NewTest" name="testEasy" time="4.376"/>
+  <testcase classname="example.Firefoxcase" name="testFirefoxcase" time="1.491">
+    <failure message="Unable to locate element: div.sbqs_c (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 19 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;unknown&apos;, revision: &apos;31c43c8&apos;, time: &apos;2016-08-02 21:57:56 -0700&apos;
+System info: host: &apos;PQA-0327LT&apos;, ip: &apos;10.16.17.126&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160726073904, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, browserVersion=48.0, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=Windows_NT, device=desktop}]
+Session ID: c45821e9-3da8-486b-b6bb-c0f62397f5e9
+*** Element info: {Using=css selector, value=div.sbqs_c}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: div.sbqs_c (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 19 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;unknown&apos;, revision: &apos;31c43c8&apos;, time: &apos;2016-08-02 21:57:56 -0700&apos;
+System info: host: &apos;PQA-0327LT&apos;, ip: &apos;10.16.17.126&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160726073904, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, browserVersion=48.0, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=Windows_NT, device=desktop}]
+Session ID: c45821e9-3da8-486b-b6bb-c0f62397f5e9
+*** Element info: {Using=css selector, value=div.sbqs_c}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:683)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:498)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:369)
+	at example.Firefoxcase.testFirefoxcase(Firefoxcase.java:38)
+</failure>
+    <system-err>1471277312640	Marionette	INFO	Listening on port 54319
+1471277316663	Marionette	INFO	startBrowser c45821e9-3da8-486b-b6bb-c0f62397f5e9
+1471277316682	Marionette	INFO	sendAsync c45821e9-3da8-486b-b6bb-c0f62397f5e9
+1471277317403	Marionette	INFO	sendAsync c45821e9-3da8-486b-b6bb-c0f62397f5e9
+1471277317471	Marionette	INFO	sendAsync c45821e9-3da8-486b-b6bb-c0f62397f5e9
+1471277318594	Marionette	INFO	sendAsync c45821e9-3da8-486b-b6bb-c0f62397f5e9
+1471277319607	Marionette	INFO	sendAsync c45821e9-3da8-486b-b6bb-c0f62397f5e9
+1471277320616	Marionette	INFO	sendAsync c45821e9-3da8-486b-b6bb-c0f62397f5e9
+1471277321629	Marionette	INFO	sendAsync c45821e9-3da8-486b-b6bb-c0f62397f5e9
+1471277322638	Marionette	INFO	sendAsync c45821e9-3da8-486b-b6bb-c0f62397f5e9
+1471277323651	Marionette	INFO	sendAsync c45821e9-3da8-486b-b6bb-c0f62397f5e9
+1471277324724	Marionette	INFO	sendAsync c45821e9-3da8-486b-b6bb-c0f62397f5e9
+1471277325735	Marionette	INFO	sendAsync c45821e9-3da8-486b-b6bb-c0f62397f5e9
+1471277326744	Marionette	INFO	sendAsync c45821e9-3da8-486b-b6bb-c0f62397f5e9
+1471277327757	Marionette	INFO	sendAsync c45821e9-3da8-486b-b6bb-c0f62397f5e9
+1471277328768	Marionette	INFO	sendAsync c45821e9-3da8-486b-b6bb-c0f62397f5e9
+1471277329779	Marionette	INFO	sendAsync c45821e9-3da8-486b-b6bb-c0f62397f5e9
+1471277330788	Marionette	INFO	sendAsync c45821e9-3da8-486b-b6bb-c0f62397f5e9
+1471277330801	Marionette	INFO	sendAsync c45821e9-3da8-486b-b6bb-c0f62397f5e9
+1471277332166	Marionette	INFO	sendAsync c45821e9-3da8-486b-b6bb-c0f62397f5e9
+1471277332177	Marionette	INFO	sendAsync c45821e9-3da8-486b-b6bb-c0f62397f5e9
+1471277332189	Marionette	INFO	sendAsync c45821e9-3da8-486b-b6bb-c0f62397f5e9
+1471277332200	Marionette	INFO	sendAsync c45821e9-3da8-486b-b6bb-c0f62397f5e9
+1471277332260	Marionette	INFO	sendAsync c45821e9-3da8-486b-b6bb-c0f62397f5e9
+</system-err>
+  </testcase>
+  <testcase classname="example.Firefoxcase" name="tearDown" time="3.15">
     <failure message="Error communicating with the remote browser. It may have died.
 Build info: version: &apos;unknown&apos;, revision: &apos;31c43c8&apos;, time: &apos;2016-08-02 21:57:56 -0700&apos;
 System info: host: &apos;PQA-0327LT&apos;, ip: &apos;10.16.17.126&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
 Driver info: driver.version: RemoteWebDriver
 Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160726073904, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, browserVersion=48.0, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=Windows_NT, device=desktop}]
-Session ID: ecbe1848-c850-4a71-9258-7d341864b55d" type="org.openqa.selenium.remote.UnreachableBrowserException">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Session ID: c45821e9-3da8-486b-b6bb-c0f62397f5e9" type="org.openqa.selenium.remote.UnreachableBrowserException">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
 Build info: version: &apos;unknown&apos;, revision: &apos;31c43c8&apos;, time: &apos;2016-08-02 21:57:56 -0700&apos;
 System info: host: &apos;PQA-0327LT&apos;, ip: &apos;10.16.17.126&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
 Driver info: driver.version: RemoteWebDriver
 Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160726073904, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, browserVersion=48.0, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=Windows_NT, device=desktop}]
-Session ID: ecbe1848-c850-4a71-9258-7d341864b55d
+Session ID: c45821e9-3da8-486b-b6bb-c0f62397f5e9
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:670)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:706)
 	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:531)
-	at example.Firefoxcase.tearDown(Firefoxcase.java:42)
+	at example.Firefoxcase.tearDown(Firefoxcase.java:45)
 Caused by: java.lang.IllegalStateException: UnixUtils may not be used on Windows
 	at org.openqa.selenium.os.ProcessUtils.getProcessId(ProcessUtils.java:188)
 	at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.getPID(UnixProcess.java:222)
@@ -91,70 +258,8 @@ Caused by: java.lang.IllegalStateException: UnixUtils may not be used on Windows
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:649)
 	... 36 more
 </failure>
-    <system-err>LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-[Child 11428] ###!!! ABORT: Aborting on channel error.: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2046
-
-###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
-
-
-###!!! [Child][MessageChannel] Error: (msgtype=0x900001,name=PLayer::Msg___delete__) Channel error: cannot send/recv
-
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-LdrLoadDll: Blocking load of &apos;pmls.dll&apos; -- see http://www.mozilla.com/en-US/blocklist/
-
-###!!! [Child][OnMaybeDequeueOne] Error: Channel error: cannot send/recv
-
-
-###!!! [Child][OnMaybeDequeueOne] Error: Channel error: cannot send/recv
-
-
-###!!! [Child][OnMaybeDequeueOne] Error: Channel error: cannot send/recv
-
+    <system-err>[Child 11768] ###!!! ABORT: Aborting on channel error.: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2046
 </system-err>
   </testcase>
+  <testcase classname="TestSuite1.StartBrowserWithParameter" name="testEasy" time="35.648"/>
 </testsuite>

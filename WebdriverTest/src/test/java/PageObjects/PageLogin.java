@@ -8,7 +8,7 @@ import org.testng.Assert;
 
 public class PageLogin {
 	
-	@FindBy(xpath = "//a[contains(text(),'Ãâ·Ñ×¢²á')]")
+	@FindBy(xpath = "//a[contains(text(),'å…è´¹æ³¨å†Œ')]")
 	private WebElement reg; 
 	
 	@FindBy(xpath = "//a[@id='rt-logo']")

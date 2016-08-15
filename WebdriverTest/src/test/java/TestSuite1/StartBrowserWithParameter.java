@@ -21,7 +21,7 @@ public class StartBrowserWithParameter {
 	private String ipaddress = "http://www.jd.com/";
 	private Wait wait;
 	
-	@FindBy(xpath = "//a[contains(text(),'ÆóÒµ²É¹º')]")
+	@FindBy(xpath = "//a[contains(text(),'ä¼ä¸šé‡‡è´­')]")
 	private WebElement market; 
 	
 

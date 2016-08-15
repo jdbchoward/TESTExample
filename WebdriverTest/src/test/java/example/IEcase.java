@@ -29,7 +29,6 @@ public class IEcase {
 		@Test				
 		public void testEasy() {	
 			driver.get("http://www.guru99.com/selenium-tutorial.html");  			
-			wait = new Wait(driver);
 			wait.WaitUntilPageLoaded();
 	
 		    System.out.println(driver.getTitle());
