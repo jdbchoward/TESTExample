@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="example.IEcase">
+      <class name="TestSuite1.StartBrowserWithParameter">
         <methods>
-          <include name="afterTest"/>
-          <include name="testEasy"/>
           <include name="beforeTest"/>
+          <include name="testEasy"/>
         </methods>
-      </class> <!-- example.IEcase -->
+      </class> <!-- TestSuite1.StartBrowserWithParameter -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

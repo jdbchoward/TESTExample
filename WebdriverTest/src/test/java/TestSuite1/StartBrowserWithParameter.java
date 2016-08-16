@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import PageObjects.BrowserLoader;
 import PageObjects.BrowserTypes;
 import PageObjects.CommonActions;
+import PageObjects.ElementsRepositoryAction;
 import PageObjects.PageLogin;
 import PageObjects.Wait;
 
@@ -21,7 +22,7 @@ public class StartBrowserWithParameter {
 	private String ipaddress = "http://www.jd.com/";
 	private Wait wait;
 	
-	@FindBy(xpath = "//a[contains(text(),'企业采购')]")
+//	@FindBy(xpath = "//a[contains(text(),'企业采购')]")
 	private WebElement market; 
 	
 
@@ -36,7 +37,7 @@ public class StartBrowserWithParameter {
 		//do login, or menu chooser etc...
 		PageLogin pageLogin = PageFactory.initElements(driver, PageLogin.class);
 		String logoname = pageLogin.getRegName(ipaddress);
-
+		initWebElements();
 		//do other UI action
 		market.click();
 
@@ -49,6 +50,14 @@ public class StartBrowserWithParameter {
 		String browserType=common.getSettings().getValue("browserType");
 		BrowserLoader brower = new BrowserLoader(browserType);
 		driver = brower.driver;
+				
+	}
+	
+	private void initWebElements()
+	{
+		//get elementsRepositoryAction class to read elements path from yaml config file
+		ElementsRepositoryAction elementsRepositoryAction = new ElementsRepositoryAction(driver);
+		market=elementsRepositoryAction.getElement("JD_button1");
 	}
 
 	@AfterTest
