@@ -2,6 +2,7 @@ package TestSuite1;
 
 import org.testng.annotations.Test;
 
+import DataProviderFiles.DataProviderSource;
 import PageObjects.BrowserLoader;
 import PageObjects.BrowserTypes;
 import PageObjects.CommonActions;
@@ -26,8 +27,8 @@ public class StartBrowserWithParameter {
 	private WebElement market; 
 	
 
-	@Test
-	public void testEasy() {
+	@Test (dataProvider="input2baiduSearch", dataProviderClass=DataProviderSource.class)
+	public void testEasy(int index,String inputContent) {
 
 		//get webpage and wait4pageLoaded
 		PageFactory.initElements(driver, this);
@@ -40,8 +41,28 @@ public class StartBrowserWithParameter {
 		initWebElements();
 		//do other UI action
 		market.click();
+		//get data from dataprovider
+		System.out.println(inputContent);
 
 	}
+	
+	
+	
+//	@Test(dataProvider="TestType", dataProviderClass=DataProviderSource.class, enabled = false)
+//	public void testNgDataProviderExample(String data)
+//	{
+//       System.out.println("Integration testing: Data(" + data + ")");
+//
+//	}
+//	
+//	 @Test(dataProvider="scenarioData", dataProviderClass=DataProviderSource.class,enabled = false)	 
+//	     public void commonScenarios(String scenarioData) {
+//	
+//	         System.out.println("Common Scenarios testing: Data(" + scenarioData + ")");
+//	
+//	     }
+
+	 
 
 	@BeforeTest
 	public void beforeTest() {

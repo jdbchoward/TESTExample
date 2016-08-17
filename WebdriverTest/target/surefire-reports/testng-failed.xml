@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite verbose="0" name="Failed suite [Suite]">
-  <parameter name="browser" value="chrome"/>
-  <test name="Test(failed)">
+<suite thread-count="3" verbose="0" name="Failed suite [Suite]" parallel="classes">
+  <test name="Test(failed)" parallel="classes">
     <classes>
-      <class name="example.Firefoxcase">
-        <methods>
-          <include name="testFirefoxcase"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- example.Firefoxcase -->
       <class name="example.IEcase">
         <methods>
           <include name="afterTest"/>
@@ -18,18 +10,25 @@
           <include name="beforeTest"/>
         </methods>
       </class> <!-- example.IEcase -->
-      <class name="TestSuite1.StartBrowserWithParameter">
-        <methods>
-          <include name="beforeTest"/>
-          <include name="afterTest"/>
-        </methods>
-      </class> <!-- TestSuite1.StartBrowserWithParameter -->
       <class name="example.NewTest">
         <methods>
           <include name="afterTest"/>
           <include name="beforeTest"/>
         </methods>
       </class> <!-- example.NewTest -->
+      <class name="example.Firefoxcase">
+        <methods>
+          <include name="testFirefoxcase"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- example.Firefoxcase -->
+      <class name="TestSuite1.StartBrowserWithParameter">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- TestSuite1.StartBrowserWithParameter -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

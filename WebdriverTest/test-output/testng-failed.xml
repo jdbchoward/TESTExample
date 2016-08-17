@@ -6,6 +6,7 @@
       <class name="TestSuite1.StartBrowserWithParameter">
         <methods>
           <include name="beforeTest"/>
+          <include name="afterTest"/>
           <include name="testEasy"/>
         </methods>
       </class> <!-- TestSuite1.StartBrowserWithParameter -->
