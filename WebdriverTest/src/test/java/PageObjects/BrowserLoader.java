@@ -78,7 +78,10 @@ public class BrowserLoader {
 			caps.setCapability(InternetExplorerDriver.FORCE_CREATE_PROCESS, false);
 			caps.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
 			caps.setCapability(InternetExplorerDriver.IE_SWITCHES, "-private");
-			caps.setCapability("ignoreZoomSetting", true);
+			caps.setCapability("ignoreZoomSetting", true);			
+			caps.setCapability("ignoreProtectedModeSettings", true);
+			caps.setCapability("ie.unexpectedAlertBehaviour", "accept");
+			
 			if (nodeurl.equals(""))
 				driver = new InternetExplorerDriver(caps);
 			else
