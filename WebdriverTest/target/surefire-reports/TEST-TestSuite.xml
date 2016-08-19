@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="0" name="TestSuite" time="50.443" errors="0" skipped="0">
+<testsuite tests="6" failures="1" name="TestSuite" time="41.17" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jre1.8.0_91\bin"/>
@@ -27,7 +27,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\hzhang\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf2311449769812290730.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\hzhang\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf1438070682744935130.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jre1.8.0_91\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_91/bin/server;C:/Program Files/Java/jre1.8.0_91/bin;C:/Program Files/Java/jre1.8.0_91/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Ruby22\bin;C:\Program Files\Java\jdk1.8.0_91\bin;C:\Program Files\Java\jre1.8.0_91\bin;C:\Program Files\Java\jdk1.8.0_91/bin;C:\Program Files\Java\jdk1.8.0_91/jre/bin;C:\eclipes\eclipse;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -62,9 +62,39 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="example.IEcase" name="testEasy" time="0.319"/>
-  <testcase classname="example.NewTest" name="testEasy" time="8.473"/>
-  <testcase classname="example.Firefoxcase" name="testFirefoxcase" time="5.117"/>
-  <testcase classname="TestSuite1.StartBrowserWithParameter" name="testEasy" time="23.357"/>
-  <testcase classname="TestSuite1.StartBrowserWithParameter" name="testEasy" time="13.177"/>
+  <testcase classname="example.IEcase" name="testEasy" time="0.295"/>
+  <testcase classname="example.NewTest" name="testEasy" time="4.808"/>
+  <testcase classname="example.Firefoxcase" name="testFirefoxcase" time="2.774"/>
+  <testcase classname="example.Firefoxcase" name="tearDown" time="4.395">
+    <failure message="Error communicating with the remote browser. It may have died.
+Build info: version: &apos;unknown&apos;, revision: &apos;31c43c8&apos;, time: &apos;2016-08-02 21:57:56 -0700&apos;
+System info: host: &apos;PQA-0327LT&apos;, ip: &apos;10.16.17.126&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160726073904, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, browserVersion=48.0, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=Windows_NT, device=desktop}]
+Session ID: 7bc0d41b-5e37-4d04-8aa1-ab8435b4ee04" type="org.openqa.selenium.remote.UnreachableBrowserException">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;unknown&apos;, revision: &apos;31c43c8&apos;, time: &apos;2016-08-02 21:57:56 -0700&apos;
+System info: host: &apos;PQA-0327LT&apos;, ip: &apos;10.16.17.126&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160726073904, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, browserVersion=48.0, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=Windows_NT, device=desktop}]
+Session ID: 7bc0d41b-5e37-4d04-8aa1-ab8435b4ee04
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:670)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:706)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:531)
+	at example.Firefoxcase.tearDown(Firefoxcase.java:45)
+Caused by: java.lang.IllegalStateException: UnixUtils may not be used on Windows
+	at org.openqa.selenium.os.ProcessUtils.getProcessId(ProcessUtils.java:188)
+	at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.getPID(UnixProcess.java:222)
+	at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.access$300(UnixProcess.java:201)
+	at org.openqa.selenium.os.UnixProcess.destroy(UnixProcess.java:132)
+	at org.openqa.selenium.os.CommandLine.destroy(CommandLine.java:155)
+	at org.openqa.selenium.remote.service.DriverService.stop(DriverService.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:94)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:649)
+	... 16 more
+</failure>
+    <system-err>[Child 9592] ###!!! ABORT: Aborting on channel error.: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2046
+</system-err>
+  </testcase>
+  <testcase classname="TestSuite1.StartBrowserWithParameter" name="testEasy" time="16.397"/>
+  <testcase classname="TestSuite1.StartBrowserWithParameter" name="testEasy" time="12.501"/>
 </testsuite>

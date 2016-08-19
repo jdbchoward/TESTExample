@@ -1,5 +1,7 @@
 package PageObjects;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -39,14 +41,15 @@ public class Wait {
 
 	}
 
-	public void waitForElementIsEnable(String locator) {
-		(new WebDriverWait(driver, timeout)).until(ExpectedConditions.elementToBeClickable(By.xpath(locator)));
+	public void waitForElementIsClickable(final By by) {
+		(new WebDriverWait(driver, timeout)).until(ExpectedConditions.elementToBeClickable(by));
 	}
 
 	public void waitFor(long timeout) {
 		try {
-			Thread.sleep(timeout);
-		} catch (InterruptedException e) {
+			//Thread.sleep(timeout);
+			driver.manage().timeouts().implicitlyWait(timeout, TimeUnit.SECONDS);
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
@@ -139,5 +142,23 @@ public class Wait {
         return element;
     }
 
+	
+	
+	public boolean waitElementToBeEnabled(final By by) {
+        boolean wait = false;
+        if (by == null)
+            return wait;
+        try {
+            wait = new WebDriverWait(driver, timeout)
+                    .until(new ExpectedCondition<Boolean>() {
+                        public Boolean apply(WebDriver d) {
+                            return d.findElement(by).isEnabled();
+                        }
+                    });
+        } catch (Exception e) {
+            System.out.println(driver.findElement(by).toString() + " is not enabled");
+        }
+        return wait;
+    }
 
 }

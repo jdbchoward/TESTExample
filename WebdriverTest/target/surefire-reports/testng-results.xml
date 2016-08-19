@@ -2,26 +2,72 @@
 <testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="63932" started-at="2016-08-17T17:15:13Z" finished-at="2016-08-17T17:16:17Z">
+  <suite name="Suite" duration-ms="52080" started-at="2016-08-18T00:06:34Z" finished-at="2016-08-18T00:07:26Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="63932" started-at="2016-08-17T17:15:13Z" finished-at="2016-08-17T17:16:17Z">
+    <test name="Test" duration-ms="52080" started-at="2016-08-18T00:06:34Z" finished-at="2016-08-18T00:07:26Z">
       <class name="example.Firefoxcase">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:example.Firefoxcase@2344fc66]" name="setUp" is-config="true" duration-ms="18011" started-at="2016-08-17T10:15:19Z" finished-at="2016-08-17T10:15:37Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:example.Firefoxcase@2344fc66]" name="setUp" is-config="true" duration-ms="13998" started-at="2016-08-17T17:06:40Z" finished-at="2016-08-17T17:06:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testFirefoxcase()[pri:0, instance:example.Firefoxcase@2344fc66]" name="testFirefoxcase" duration-ms="5117" started-at="2016-08-17T10:15:37Z" finished-at="2016-08-17T10:15:42Z">
+        <test-method status="PASS" signature="testFirefoxcase()[pri:0, instance:example.Firefoxcase@2344fc66]" name="testFirefoxcase" duration-ms="2774" started-at="2016-08-17T17:06:54Z" finished-at="2016-08-17T17:06:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFirefoxcase -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:example.Firefoxcase@2344fc66]" name="tearDown" is-config="true" duration-ms="1003" started-at="2016-08-17T10:15:42Z" finished-at="2016-08-17T10:15:43Z">
+        <test-method status="FAIL" signature="tearDown()[pri:0, instance:example.Firefoxcase@2344fc66]" name="tearDown" is-config="true" duration-ms="0" started-at="2016-08-17T17:06:57Z" finished-at="2016-08-17T17:06:57Z">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Error communicating with the remote browser. It may have died.
+Build info: version: 'unknown', revision: '31c43c8', time: '2016-08-02 21:57:56 -0700'
+System info: host: 'PQA-0327LT', ip: '10.16.17.126', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160726073904, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, browserVersion=48.0, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=Windows_NT, device=desktop}]
+Session ID: 7bc0d41b-5e37-4d04-8aa1-ab8435b4ee04]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: 'unknown', revision: '31c43c8', time: '2016-08-02 21:57:56 -0700'
+System info: host: 'PQA-0327LT', ip: '10.16.17.126', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160726073904, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, browserVersion=48.0, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=Windows_NT, device=desktop}]
+Session ID: 7bc0d41b-5e37-4d04-8aa1-ab8435b4ee04
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:670)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:706)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:531)
+	at example.Firefoxcase.tearDown(Firefoxcase.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:225)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:114)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: UnixUtils may not be used on Windows
+	at org.openqa.selenium.os.ProcessUtils.getProcessId(ProcessUtils.java:188)
+	at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.getPID(UnixProcess.java:222)
+	at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.access$300(UnixProcess.java:201)
+	at org.openqa.selenium.os.UnixProcess.destroy(UnixProcess.java:132)
+	at org.openqa.selenium.os.CommandLine.destroy(CommandLine.java:155)
+	at org.openqa.selenium.remote.service.DriverService.stop(DriverService.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:94)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:649)
+	... 16 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- example.Firefoxcase -->
       <class name="TestSuite1.StartBrowserWithParameter">
-        <test-method status="PASS" signature="testEasy(int, java.lang.String)[pri:0, instance:TestSuite1.StartBrowserWithParameter@458ad742]" name="testEasy" duration-ms="41686" started-at="2016-08-17T10:15:19Z" data-provider="input2baiduSearch" finished-at="2016-08-17T10:16:01Z">
+        <test-method status="PASS" signature="testEasy(int, java.lang.String)[pri:0, instance:TestSuite1.StartBrowserWithParameter@458ad742]" name="testEasy" duration-ms="30691" started-at="2016-08-17T17:06:40Z" data-provider="input2baiduSearch" finished-at="2016-08-17T17:07:11Z">
           <params>
             <param index="0">
               <value>
@@ -37,7 +83,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEasy -->
-        <test-method status="PASS" signature="testEasy(int, java.lang.String)[pri:0, instance:TestSuite1.StartBrowserWithParameter@458ad742]" name="testEasy" duration-ms="13176" started-at="2016-08-17T10:16:01Z" data-provider="input2baiduSearch" finished-at="2016-08-17T10:16:14Z">
+        <test-method status="PASS" signature="testEasy(int, java.lang.String)[pri:0, instance:TestSuite1.StartBrowserWithParameter@458ad742]" name="testEasy" duration-ms="12502" started-at="2016-08-17T17:07:11Z" data-provider="input2baiduSearch" finished-at="2016-08-17T17:07:23Z">
           <params>
             <param index="0">
               <value>
@@ -55,37 +101,37 @@
         </test-method> <!-- testEasy -->
       </class> <!-- TestSuite1.StartBrowserWithParameter -->
       <class name="example.NewTest">
-        <test-method status="PASS" signature="testEasy()[pri:0, instance:example.NewTest@5056dfcb]" name="testEasy" duration-ms="8472" started-at="2016-08-17T10:15:19Z" finished-at="2016-08-17T10:15:28Z">
+        <test-method status="PASS" signature="testEasy()[pri:0, instance:example.NewTest@5056dfcb]" name="testEasy" duration-ms="4810" started-at="2016-08-17T17:06:40Z" finished-at="2016-08-17T17:06:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEasy -->
       </class> <!-- example.NewTest -->
       <class name="example.IEcase">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.IEcase@3dd3bcd]" name="beforeTest" is-config="true" duration-ms="2705" started-at="2016-08-17T10:15:13Z" finished-at="2016-08-17T10:15:15Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.IEcase@3dd3bcd]" name="beforeTest" is-config="true" duration-ms="2757" started-at="2016-08-17T17:06:34Z" finished-at="2016-08-17T17:06:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.NewTest@5056dfcb]" name="beforeTest" is-config="true" duration-ms="1808" started-at="2016-08-17T10:15:15Z" finished-at="2016-08-17T10:15:17Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.NewTest@5056dfcb]" name="beforeTest" is-config="true" duration-ms="1563" started-at="2016-08-17T17:06:37Z" finished-at="2016-08-17T17:06:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:TestSuite1.StartBrowserWithParameter@458ad742]" name="beforeTest" is-config="true" duration-ms="1797" started-at="2016-08-17T10:15:17Z" finished-at="2016-08-17T10:15:19Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:TestSuite1.StartBrowserWithParameter@458ad742]" name="beforeTest" is-config="true" duration-ms="1807" started-at="2016-08-17T17:06:38Z" finished-at="2016-08-17T17:06:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="testEasy()[pri:0, instance:example.IEcase@3dd3bcd]" name="testEasy" duration-ms="318" started-at="2016-08-17T10:15:19Z" finished-at="2016-08-17T10:15:19Z">
+        <test-method status="PASS" signature="testEasy()[pri:0, instance:example.IEcase@3dd3bcd]" name="testEasy" duration-ms="294" started-at="2016-08-17T17:06:40Z" finished-at="2016-08-17T17:06:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEasy -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:example.IEcase@3dd3bcd]" name="afterTest" is-config="true" duration-ms="783" started-at="2016-08-17T10:16:14Z" finished-at="2016-08-17T10:16:15Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:example.IEcase@3dd3bcd]" name="afterTest" is-config="true" duration-ms="784" started-at="2016-08-17T17:07:23Z" finished-at="2016-08-17T17:07:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:example.NewTest@5056dfcb]" name="afterTest" is-config="true" duration-ms="969" started-at="2016-08-17T10:16:15Z" finished-at="2016-08-17T10:16:16Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:example.NewTest@5056dfcb]" name="afterTest" is-config="true" duration-ms="994" started-at="2016-08-17T17:07:24Z" finished-at="2016-08-17T17:07:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:TestSuite1.StartBrowserWithParameter@458ad742]" name="afterTest" is-config="true" duration-ms="990" started-at="2016-08-17T10:16:16Z" finished-at="2016-08-17T10:16:17Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:TestSuite1.StartBrowserWithParameter@458ad742]" name="afterTest" is-config="true" duration-ms="969" started-at="2016-08-17T17:07:25Z" finished-at="2016-08-17T17:07:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

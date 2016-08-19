@@ -31,23 +31,53 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">5</td><td class="numi">5</td><td class="numi">0</td><td class="numi">0</td><td class="numi">63.9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">5</td><td class="numi">5</td><td class="numi">0</td><td class="numi">0</td><td class="numi">52.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">example.Firefoxcase</td><td><a href="#m1"><b>tearDown</b>  </a></td><td class="numi">1</td><td>1471478817537</td><td class="numi">0</td></tr>
 <tr><th colspan="4">Test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="1">example.IEcase</td><td><a href="#m1"><b>testEasy</b>  </a></td><td class="numi">1</td><td>1471454119543</td><td class="numi">318</td></tr>
-<tr class="passedeven"><td rowspan="1">TestSuite1.StartBrowserWithParameter</td><td><a href="#m2"><b>testEasy</b>  </a></td><td class="numi">2</td><td>1471454119543</td><td class="numi">54863</td></tr>
-<tr class="passedodd"><td rowspan="1">example.NewTest</td><td><a href="#m3"><b>testEasy</b>  </a></td><td class="numi">1</td><td>1471454119543</td><td class="numi">8472</td></tr>
-<tr class="passedeven"><td rowspan="1">example.Firefoxcase</td><td><a href="#m4"><b>testFirefoxcase</b>  </a></td><td class="numi">1</td><td>1471454137873</td><td class="numi">5117</td></tr>
-<tr class="passedodd"><td rowspan="1">TestSuite1.StartBrowserWithParameter</td><td><a href="#m5"><b>testEasy</b>  </a></td><td class="numi">2</td><td>1471454119543</td><td class="numi">54863</td></tr>
+<tr class="passedodd"><td rowspan="1">example.NewTest</td><td><a href="#m2"><b>testEasy</b>  </a></td><td class="numi">1</td><td>1471478800468</td><td class="numi">4810</td></tr>
+<tr class="passedeven"><td rowspan="1">example.IEcase</td><td><a href="#m3"><b>testEasy</b>  </a></td><td class="numi">1</td><td>1471478800469</td><td class="numi">294</td></tr>
+<tr class="passedodd"><td rowspan="1">TestSuite1.StartBrowserWithParameter</td><td><a href="#m4"><b>testEasy</b>  </a></td><td class="numi">2</td><td>1471478800469</td><td class="numi">43193</td></tr>
+<tr class="passedeven"><td rowspan="1">example.Firefoxcase</td><td><a href="#m5"><b>testFirefoxcase</b>  </a></td><td class="numi">1</td><td>1471478814762</td><td class="numi">2774</td></tr>
+<tr class="passedodd"><td rowspan="1">TestSuite1.StartBrowserWithParameter</td><td><a href="#m6"><b>testEasy</b>  </a></td><td class="numi">2</td><td>1471478800469</td><td class="numi">43193</td></tr>
 </table>
 <h1>Test</h1>
-<h2 id="m1">example.Firefoxcase:testFirefoxcase</h2>
+<h2 id="m1">example.Firefoxcase:tearDown</h2>
+<div style="padding-left:3em">
+<p>Error communicating with the remote browser. It may have died.
+Build info: version: &apos;unknown&apos;, revision: &apos;31c43c8&apos;, time: &apos;2016-08-02 21:57:56 -0700&apos;
+System info: host: &apos;PQA-0327LT&apos;, ip: &apos;10.16.17.126&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160726073904, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, browserVersion=48.0, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=Windows_NT, device=desktop}]
+Session ID: 7bc0d41b-5e37-4d04-8aa1-ab8435b4ee04</p>
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:670)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:706)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:531)
+<br/>at example.Firefoxcase.tearDown(Firefoxcase.java:45)
+<br/>14 lines not shown
+<p>Caused by UnixUtils may not be used on Windows</p>
+org.openqa.selenium.os.ProcessUtils.getProcessId(ProcessUtils.java:188)
+<br/>at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.getPID(UnixProcess.java:222)
+<br/>at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.access$300(UnixProcess.java:201)
+<br/>at org.openqa.selenium.os.UnixProcess.destroy(UnixProcess.java:132)
+<br/>at org.openqa.selenium.os.CommandLine.destroy(CommandLine.java:155)
+<br/>at org.openqa.selenium.remote.service.DriverService.stop(DriverService.java:196)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:94)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:649)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:706)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:531)
+<br/>at example.Firefoxcase.tearDown(Firefoxcase.java:45)
+<br/>14 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">example.NewTest:testEasy</h2>
+<h2 id="m2">example.Firefoxcase:testFirefoxcase</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">TestSuite1.StartBrowserWithParameter:testEasy</h2>
+<h2 id="m3">example.NewTest:testEasy</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">TestSuite1.StartBrowserWithParameter:testEasy</h2>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
 <tr class="param stripe"><td>6</td>
@@ -55,7 +85,7 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 </tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m4">TestSuite1.StartBrowserWithParameter:testEasy</h2>
+<h2 id="m5">TestSuite1.StartBrowserWithParameter:testEasy</h2>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
 <tr class="param stripe"><td>5</td>
@@ -63,6 +93,6 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 </tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m5">example.IEcase:testEasy</h2>
+<h2 id="m6">example.IEcase:testEasy</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

@@ -26,9 +26,8 @@ public class StartBrowserWithParameter {
 //	@FindBy(xpath = "//a[contains(text(),'企业采购')]")
 	private WebElement market; 
 	
-
-	@Test (dataProvider="input2baiduSearch", dataProviderClass=DataProviderSource.class)
-	public void testEasy(int index,String inputContent) {
+	@Test
+	public void testEasy() {
 
 		//get webpage and wait4pageLoaded
 		PageFactory.initElements(driver, this);
@@ -42,11 +41,15 @@ public class StartBrowserWithParameter {
 		//do other UI action
 		market.click();
 		//get data from dataprovider
-		System.out.println(inputContent);
+		
 
 	}
 	
-	
+	@Test (dataProvider="input2baiduSearch", dataProviderClass=DataProviderSource.class)
+	public void dataProviderTest(int index,String inputContent)
+	{
+		System.out.println(inputContent);
+	}
 	
 //	@Test(dataProvider="TestType", dataProviderClass=DataProviderSource.class, enabled = false)
 //	public void testNgDataProviderExample(String data)

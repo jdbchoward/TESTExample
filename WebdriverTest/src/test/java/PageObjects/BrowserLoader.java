@@ -53,6 +53,7 @@ public class BrowserLoader {
 				// firefoxprofile.addExtension(firebug);
 				// firefoxprofile.addExtension(firepath);
 				firefoxprofile.setPreference("webdriver.accept.untrusted.certs", "true");
+				firefoxprofile.setPreference("dom.disable_open_during_load", "false");
 				// firefoxprofile.setPreference("extensions.firebug.currentVersion",
 				// "1.12.1");
 			} catch (Exception e) {
@@ -92,6 +93,8 @@ public class BrowserLoader {
 		case chrome:
 			System.setProperty("webdriver.chrome.driver", driverpath + "chromedriver.exe");
 		    ChromeOptions options=new ChromeOptions();
+		    options.addArguments("-incognito");
+		    options.addArguments("--disable-popup-blocking");
 		    options.addArguments("no-sandbox");
 		    options.addArguments("chrome.switches","--disable-extensions");
 		
