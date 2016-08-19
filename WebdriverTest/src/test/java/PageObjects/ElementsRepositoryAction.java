@@ -103,9 +103,12 @@ public class ElementsRepositoryAction {
 				value = this.replaceLocatorString(value, replace);
 			}
 			By by = this.getBy(type, value);
-			if (needWait && wait.waitElementToBeDisplayed(by)) {
-				element = driver.findElement(by);
-			}
+			
+			if(!needWait)
+				return element = driver.findElement(by);
+			if (needWait && wait.waitElementToBeDisplayed(by)) 
+				return element = driver.findElement(by);
+		
 		} else {
 			System.out.println("ElementsPepository.class : " + key + " is not exists in " + yamlfile + ".yaml");
 		}

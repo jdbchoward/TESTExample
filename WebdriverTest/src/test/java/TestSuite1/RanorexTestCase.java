@@ -62,7 +62,8 @@ public class RanorexTestCase {
 		String currWinHandle = driver.getWindowHandle();
 		String pageTitleSwitchTo = "Test Automation Tools | Ranorex - Automated Testing for Everyone";
 		common.switchWindowHandles(driver, pageTitleSwitchTo);
-		common.javascriptClick(driver, elementsRepositoryAction.getElement("Ranorex_btn_Img"));
+		wait.waitFor(10);
+		common.javascriptClick(driver, elementsRepositoryAction.getElementNoWait("Ranorex_btn_Img"));
 		common.javascriptClick(driver, driver.findElement(By.xpath("//img [@src='images/playbutton-56.png' ]")));
 		driver.close();
 		driver.switchTo().window(currWinHandle);
