@@ -27,6 +27,14 @@ public class CommonActions {
 		String href = webElement.getAttribute("href");
 		((JavascriptExecutor) driver).executeScript("window.open('" + href + "')");
 	}
+	
+	
+	public void javascriptInputToTextField(WebDriver driver,WebElement ele,String content)
+	{//this element could be input's iframe
+		String js = "arguments[0].contentWindow.document.body.innerHTML='"
+				+ content + "'";
+		((JavascriptExecutor) driver).executeScript(js, ele);
+	}
 
 	/**
 	 * Switch WindowHandles,pageName is the title of page that u want to
