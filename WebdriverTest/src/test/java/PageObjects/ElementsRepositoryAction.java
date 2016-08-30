@@ -16,27 +16,42 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+/*
+ * Singleton Class to get path for elements from external file
+ */
 public class ElementsRepositoryAction {
+	private static ElementsRepositoryAction elementsRepositoryInstance;
 	private String yamlfile;
 	private WebDriver driver;
 	private Map<String, Map<String, String>> elementRepository;
 	private Wait wait;
 
-	public ElementsRepositoryAction(WebDriver driver) {
+	private ElementsRepositoryAction(WebDriver driver) {
 		yamlfile = "ElementsPath";
 		this.getYamlFile();
 		this.driver = driver;
 		wait = new Wait(driver);
 	}
 
+	public static synchronized ElementsRepositoryAction getInstance(WebDriver driver) {
+		if (elementsRepositoryInstance == null) {
+			elementsRepositoryInstance = new ElementsRepositoryAction(driver);
+		}
+		return elementsRepositoryInstance;
+	}
+	
+	
+
 	public void getYamlFile() {
-		 
-		String path=System.getProperty("user.dir");
-		File f = new File(path+"\\src\\test\\resources\\ElementsPath.yaml");
-		
+
+		String path = System.getProperty("user.dir");
+		File f = new File(path + "\\src\\test\\resources\\ElementsPath.yaml");
+
 		try {
-			//elementRepository = Yaml.loadType(new FileInputStream(f.getAbsolutePath()), HashMap.class);
-			elementRepository = Yaml.loadType(new InputStreamReader(new FileInputStream(f.getAbsolutePath()), "UTF-8"), HashMap.class);
+			// elementRepository = Yaml.loadType(new
+			// FileInputStream(f.getAbsolutePath()), HashMap.class);
+			elementRepository = Yaml.loadType(new InputStreamReader(new FileInputStream(f.getAbsolutePath()), "UTF-8"),
+					HashMap.class);
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -103,12 +118,12 @@ public class ElementsRepositoryAction {
 				value = this.replaceLocatorString(value, replace);
 			}
 			By by = this.getBy(type, value);
-			
-			if(!needWait)
+
+			if (!needWait)
 				return element = driver.findElement(by);
-			if (needWait && wait.waitElementToBeDisplayed(by)) 
+			if (needWait && wait.waitElementToBeDisplayed(by))
 				return element = driver.findElement(by);
-		
+
 		} else {
 			System.out.println("ElementsPepository.class : " + key + " is not exists in " + yamlfile + ".yaml");
 		}
@@ -134,16 +149,16 @@ public class ElementsRepositoryAction {
 		options.addArguments("chrome.switches", "--disable-extensions");
 
 		driver = new ChromeDriver(options);
-		ElementsRepositoryAction el = new ElementsRepositoryAction(driver);
+		ElementsRepositoryAction el = ElementsRepositoryAction.getInstance(driver);
 		// TODO Auto-generated method stub
 
-		//el.driver.navigate().to("http://www.baidu.com");
+		// el.driver.navigate().to("http://www.baidu.com");
 		el.driver.navigate().to("http://www.jd.com");
 		WebElement element;
 		element = el.getElement("JD_button1");
 		// String[] replace = new String[] { "kw" };// element =
 		// l.getElement("baidu_input", replace);
-		//element.sendKeys("aa");
+		// element.sendKeys("aa");
 		element.click();
 		driver.close();
 		driver.quit();
